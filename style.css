@@ -1,0 +1,991 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+
+@keyframes drip {
+  0%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  35%{
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  50%{
+    transform: translateY(110vh);
+  }
+  100%{
+    transform: translateY(110vh);
+  }
+  
+}
+
+/* Navbar */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: sticky;
+  top: 0px;
+  padding: 10px;
+  background-color: white;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: end;
+  padding: 10px 20px;  
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+
+}
+
+#mobile, #close{
+visibility: hidden;
+}
+
+
+.logo{
+  margin-left: 20px;
+  display: flex;
+  align-items: end;
+  font-weight: 1000;
+  background-color: transparent;
+  color: #0887d1;
+  
+
+}
+
+.logo img{
+  height: 40px;
+  width: 40px;
+  margin-right: 2px;
+}
+
+.main-content{
+  margin-right: 50px;
+}
+
+.main-content a.active,
+.main-content a:hover{
+  color: rgb(8, 135, 209);
+  text-decoration: none;
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(8, 135, 209);
+}
+
+.main-content a.active::after{
+  background-color: aquamarine;
+
+}
+
+.main-content .a{
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 20px;
+}
+
+
+/* Hero Section  home page*/
+
+#hero{
+  background-image: url("./img/portrait-handsome-confident-model-sexy-stylish-man-dressed-checkered-shirt-jeans-fashion-hipster-male-posing-near-white-wall-studio-taking-selfie-photos.jpg");
+  background-size: cover;
+  height: 90vh;
+  padding: 100px;
+  display: flex;
+  padding-top: 250px;
+  padding-left: 900px;
+  flex-direction: column;
+}
+
+#hero h4{
+  margin-bottom: 20px;
+}
+
+#h21{
+  color: #0887d1;
+}
+
+#hero #h2{
+    font-size: 20px;
+}
+
+#hero p{
+
+}
+
+#hero button{
+  appearance: none;
+  border: none;
+  background-image: url("./img/button.png");
+  background-size: cover;
+  padding: 15px 40px;
+  width: 250px;
+  font-weight: 500;
+  height: 60px;
+  background-color: transparent;
+}
+
+
+/* Featured Products Home page*/
+
+#featured-products{
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+
+.featured-products-collection{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.product{
+  height: 380px;
+  width: 270px;
+  background-color: rgb(237, 249, 254);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product:hover{
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+}
+
+.product img{
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.product p{
+  font-size: 10px;
+}
+
+.product h5{
+  margin-top: -10px;
+}
+
+.product .rating{
+  margin-top: 10px;
+}
+
+.product .price{
+  margin-top: 10px;
+}
+
+/*  Banner 1 home page*/
+
+#banner1{
+  background-image: url("./img/banner/young-asia-lady-using-phone-credit-bank-card-with-positive-expression-smile-broadly-dressed-casual-clothing-stand-isolated-blue-background-panoramic-banner-background-with-copy-space.jpg");
+  height: 350px;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  padding-top: 100px;
+  background-size: cover;
+}
+
+#banner1 h5{
+  color: #c1ebf3;
+  margin-left: 450px;
+  
+}
+
+#banner1 h2{
+  font-size: 30px;
+  margin-left: 150px;
+  margin-top: 20px;
+  filter: drop-shadow(2px 2px 2px #d2e2e5);
+
+}
+
+#banner1 button{
+  margin-left: 430px;
+  margin-top: 20px;
+  appearance: none;
+  height: 50px;
+  width: 150px;
+  background-color: #d2e2e5;
+  border: none;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 5px inset #d2e2e5;
+  transition: 0.1s linear;
+}
+
+#banner1 button:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px 1px black;
+  background-color: #222;
+  border-color: black;
+  color: azure;
+}
+
+/* Action and text banners*/
+
+#action-banners{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+#action-banners .banner{
+  height: 400px;
+  width: 45%;
+  padding-left: 40px;
+  color: white
+}
+
+#action-banners .bn1{
+  background-image: url("./img/banner/b17.jpg");
+  background-size: cover;
+}
+
+#action-banners .bn2{
+  background-image: url("./img/banner/b10.jpg");
+  background-size: cover;
+}
+
+#action-banners .b1 button{
+  
+  margin-top: 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  height: 50px;
+  color: white;
+  width: 150px;
+  font-weight: 700;
+  transition:0.5s linear;
+}
+
+#action-banners .b1 button:hover{
+  background-color: #0887d1;
+  cursor: pointer;
+  border: none;
+}
+
+
+#action-banners .b1 h6{
+  margin-top: 15px;
+  
+}
+
+#action-banners .b1 h2{
+  margin-top: 10px;
+  color: white;
+  filter: drop-shadow(2px 2px 1px black);
+}
+
+#action-banners .b1 h5{
+  margin-top: 140px;
+  margin-left: 4px;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+/* text banners home page*/
+
+#text-banners{
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+#text-banners .banner{
+  background-color: #222;
+  height: 200px;
+  width: 26%;
+  background-size: cover;
+  padding-top: 70px;
+  padding-left: 20px;
+}
+
+#text-banners .banner h3{
+  color: white;
+  font-size: 30px;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+
+#text-banners .banner h5{
+  color: red;
+}
+
+#text-banners #b1{
+  background-image: url("./img/banner/b7.jpg");
+}
+
+#text-banners #b2{
+  width: 35%;
+  background-image: url("./img/banner/b4.jpg");
+}
+
+#text-banners #b3{
+  background-image: url("./img/banner/b18.jpg");
+}
+
+/*Signup BAnner*/
+
+#sign-up-banner{
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  margin-bottom: 50px;
+  align-items: center;
+  background-image: url("./img/banner/bn15.jpg");
+
+}
+
+#sign-up-banner .head h2{
+  color: #031018;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#sign-up-banner .head p{
+  color: aliceblue;
+  margin-top: 5px;
+}
+
+#sign-up-banner .head p span{
+  color: chartreuse;
+}
+
+#sign-up-banner .signup input{
+  height: 50px;
+  width: 450px;
+  margin-right: 0px;
+  text-align: end;
+  padding: 5px;
+  padding-right: 20px;
+
+}
+
+#sign-up-banner .signup button{
+  height: 48px;
+  width: 100px;
+  margin-left: -4px;
+  border: none;
+  background-color: rgb(17, 204, 142);
+  transition: 0.5s linear;
+
+}
+
+#sign-up-banner .signup button:hover{
+  color: white;
+  background-color: #031018;
+  box-shadow: 2px 2px 2px rgb(161, 211, 255);
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+  padding: 50px;
+}
+
+footer .container{
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+footer .container .col1 img{
+  height: 80px;
+  width: 80px;
+  margin-bottom: 40px;
+}
+
+footer .container .col1 #h6{
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+footer .container .col1 p{
+  font-size: 12px;
+}
+
+footer .container .col1 p span{
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+footer .container .col1 #h61{
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+footer .container .col1 .icons i{
+  margin: 5px;
+  transition: 0.2s linear;
+  cursor: pointer;
+  color: #031018;
+}
+
+footer .container .col1 .icons i:hover{
+  color: #0887d1;
+}
+
+footer .about-us{
+  margin-left: 100px;
+  margin-bottom: 35px;
+}
+
+footer .about-us .icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .about-us .icons img{
+  width: 200px;
+}
+
+#install h6{
+  margin-bottom: 20px;
+}
+#install p{
+  margin-top: 10px;
+}
+
+
+/* Media QUeries*/
+
+@media (max-width: 740px) {
+  .header{
+    width: 100%;
+  }
+
+  .navbar .main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0px;
+    right: -350px;
+    height: 100vh;
+    width: 300px;
+    box-shadow: 0px 0px 5px #0887d1;
+    padding-top: 100px;
+    transition: 0.6s linear;
+    visibility: hidden;
+  }
+
+  #close{
+    position: absolute;
+    left: 30px;
+    top:30px;
+  
+  }
+
+  #close.xactive{
+    visibility: visible;
+  }
+
+  .navbar .main-content a{
+    margin-bottom: 25px;
+  }
+
+  .navbar .main-content.active{
+    right: -50px;
+    visibility: visible;
+  }
+
+  .header{
+    
+    width: 100vh;
+  }
+
+  #mobile{
+    font-size: 24px;
+    display: flex;
+    visibility: visible;
+  }
+
+  #mobile input{
+    display: none;
+  }
+
+  #mobile i{
+    margin-left: 30px;
+  }
+
+  #hero{
+    width: 20vh;
+    padding-left: 500px;
+    padding-top: 300px;
+  }
+ 
+
+  .navbar .main-content #sign{
+    margin-left: 22px;  }
+
+  #hero{
+    margin-left: -100px;
+  }
+  #hero h4{
+      font-size: 20px;
+      width: 200px;
+  }
+  
+  #hero h2{
+    width: 400px;
+    font-size: 30px;
+    margin-top: -10px;
+  }
+
+  #hero p{
+    width: 300px;
+    margin-bottom: 45px;
+  }
+
+
+  #featured-products h1{
+    width: 300px;
+    font-size: 30px;
+    margin-left: 270px;
+
+  }
+
+  .featured-products-collection {
+    display: flex;
+    width: 100vh;
+    flex-wrap: wrap;
+}
+
+  #featured-products .p1{
+    margin-left: 280px;
+    width: 300px;
+  }
+
+  #featured-products .product{
+    margin-left: 95px;
+  }
+
+  #banner1{
+    background-image: url("./img/banner/young-asia-lady-using-phone-credit-bank-card-with-positive-expression-smile-broadly-dressed-casual-clothing-stand-isolated-blue-background-panoramic-banner-background-with-copy-space.jpg");
+    height: 350px;
+    width: 100vh;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding-top: 100px;
+    background-size: cover;
+  }
+
+  #banner1 h2 {
+    font-size: 25px;
+    margin-left: 62px;
+    margin-top: -2px;
+    filter: drop-shadow(2px 2px 2px #d2e2e5);
+  }
+
+  
+  #banner1 h5 {
+    color: #c1ebf3;
+    margin-left: 311px;
+    margin-bottom: 10px;
+  }
+
+  #banner1 button {
+    margin-left: 287px;
+    margin-top: 20px;
+    appearance: none;
+    height: 50px;
+    width: 150px;
+    background-color: #d2e2e5;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 5px inset #d2e2e5;
+    transition: 0.1s linear;
+  }
+
+  #action-banners {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+#action-banners .banner {
+  height: 400px;
+  width: 100%;
+  padding-left: 40px;
+  color: white;
+}
+
+#sign-up-banner {
+  height: 150px;
+  width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  margin-bottom: 50px;
+  align-items: center;
+  background-image: url("./img/banner/bn15.jpg");
+}
+
+#sign-up-banner .head h2 {
+  color: #031018;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#sign-up-banner .signup input {
+  height: 29px;
+  width: 245px;
+  margin-right: 0px;
+  text-align: end;
+  padding: 5px;
+  padding-right: 20px;
+}
+
+#sign-up-banner .signup button {
+  height: 29px;
+  width: 59px;
+  margin-left: -4px;
+  font-size: 10px;
+  border: none;
+  background-color: rgb(17, 204, 142);
+  transition: 0.5s linear;
+}
+
+footer .container .col1 #h6 {
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+
+footer .container .col1 img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 40px;
+}
+
+footer .container {
+  display: flex;
+  align-items: end;
+  flex-wrap: nowrap;
+  font-size: 10px;
+}
+
+footer .container .col1 p {
+  font-size: 8px;
+}
+
+
+
+footer .container .col1 p {
+  font-size: 8px;
+  margin: 5px;
+  margin-left: 5px;
+
+ 
+}
+
+footer .container .col1 #h6 {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 23px;
+  width: 100vh;
+  padding-left: 50px;
+}
+
+footer .about-us {
+  margin-left: 32px;
+  margin-bottom: 60px;
+}
+
+
+
+footer .container .col1 img {
+  height: 27px;
+  width: 70px;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 11px;
+  color: #465b52;
+  margin: 15px 0 20px -41px;
+}
+
+#i {
+  height: 40px;
+  width: 40px;
+}
+
+#text-banners {
+  height: 229px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 0px 10px 60px;
+
+}
+
+
+
+#action-banners .banner {
+  height: 299px;
+  width: 93%;
+  padding-left: 40px;
+  color: white;
+}
+
+#text-banners .banner h3 {
+  color: white;
+  font-size: 14px;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+
+#text-banners .banner {
+  background-color: #222;
+  height: 126px;
+  width: 26%;
+  background-size: cover;
+  padding-top: 37px;
+  padding-left: 20px;
+}
+  
+p {
+  font-size: 11px;
+  color: #465b52;
+  margin: 15px 0 20px 8px;
+}
+
+#text-banners .banner {
+  background-color: #222;
+  height: 126px;
+  width: 32%;
+  background-size: cover;
+  padding-top: 37px;
+  padding-left: 20px;
+  margin: 10px;
+}
+
+#sign-up-banner {
+  height: 150px;
+  width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  margin-bottom: 50px;
+  align-items: center;
+  background-image: url("./img/banner/bn15.jpg");
+}
+
+#action-banners .banner {
+  height: 224px;
+  width: 96%;
+  padding-left: 43px;
+  color: white;
+  margin-left: 110px;
+}
+
+#hero {
+  margin-left: -100px;
+}
+
+#hero {
+  width: 20vh;
+  padding-left: 643px;
+  padding-top: 300px;
+}
+
+#text-banners {
+  height: 229px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: -27px 0px 10px 60px;
+}
+}
+
+
+
+
+
+
+/*   Shop Page    */
+
+
+/*  BAnner 1 Shop page*/
+
+
+#Sbannner1{
+  background-image: url("./img/banner/b1.jpg");
+  height: 350px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding-top: 150px;
+  padding-left: 500px;
+  background-size: cover;
+  color: #d2e2e5;
+}
+
+#Sbannner1 h1{
+  color: #d2e2e5;
+}
+
+
+
+/*  sprodcut page*/
+
+
+#main{
+  padding: 100px;
+  display: flex;
+  height: 60%;
+}
+#mainimg{
+  width: 100%;
+  margin-bottom: 0px;
+  margin-right: 40px;
+}
+
+#mainimg #img{
+  width: 100%;
+}
+.small-image-group{
+  display: flex;
+  margin: 0px;
+  margin-left: -4px;
+}
+
+.small-image-group .smallimg{
+  margin: 3px;
+  width: 23.7%;
+  cursor: pointer;
+}
+
+#desc{
+  height: 100%;
+  padding: 20px;
+}
+
+#desc h3{
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#desc #h3{
+  margin-top: 40px;
+  color: #0887d1;
+  margin-bottom: 10px;
+} 
+
+#desc select{
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#desc input{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 2px;
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+#desc button{
+  height: 40px;
+  width: 150px;
+  background-color: #0887d1;
+  border: none;
+  color: aliceblue;
+  font-weight: 600;
+  transition: 0.2s linear;
+}
+
+#desc button:hover{
+  cursor: pointer;
+  background-color: #031018;
+}
